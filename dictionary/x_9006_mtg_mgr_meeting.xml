@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="email_client=true" audit="true" label="Meeting" max_length="40" name="x_9006_mtg_mgr_meeting" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Actual end" max_length="40" name="actual_end" type="glide_date_time"/>
+        <element label="Actual start" max_length="40" name="actual_start" type="glide_date_time"/>
+        <element label="Agenda locked" max_length="40" name="agenda_locked" type="boolean"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Attendees" max_length="1024" name="attendees" reference="sys_user" type="glide_list"/>
+        <element dependent="table_name" dependent_on_field="table_name" label="Conditions" max_length="4000" name="conditions" type="conditions" use_dependent_field="true"/>
+        <element label="Conference details" max_length="8000" name="conference_details" type="html"/>
+        <element label="Meeting end time" max_length="40" name="end" type="glide_date_time"/>
+        <element label="End sdt" max_length="40" name="end_sdt" read_only="true" type="string"/>
+        <element label="Locations" max_length="4000" name="locations" reference="cmn_location" type="glide_list"/>
+        <element label="Meeting notes" max_length="8000" name="meeting_notes" type="html"/>
+        <element default="javascript: &#13;&#10;var now = new GlideDateTime;&#13;&#10;answer = now.getDisplayValue();" label="Meeting start time" max_length="40" name="meeting_start_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Meeting Topic" max_length="100" name="meeting_topic" type="string"/>
+        <element label="Notification lead time" max_length="40" name="notification_lead_time" type="integer"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Organizer" max_length="32" name="organizer" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="Start sdt" max_length="40" name="start_sdt" read_only="true" type="string"/>
+        <element label="State" max_length="40" name="state" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Table name" max_length="40" name="table_name" type="table_name"/>
+        <element label="Timer per Agenda Item" max_length="40" name="time_per_agenda_item" type="glide_duration"/>
+        <index name="index">
+            <element name="organizer"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Action Items" max_length="40" name="x_9006_mtg_mgr_action_items" type="collection">
+        <element label="Assigned Task" max_length="500" name="assigned_task" type="string"/>
+        <element label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element label="Due Date" max_length="40" name="due_date" type="glide_date_time"/>
+        <element label="Meeting" max_length="32" name="meeting" reference="x_9006_mtg_mgr_meeting" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Related Task" max_length="32" name="related_task" reference="task" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="In Progress" label="Status" max_length="40" name="status" type="string">
+            <choice>
+                <element label="In Progress" sequence="0" value="In Progress"/>
+                <element label="Cancelled" sequence="1" value="Cancelled"/>
+                <element label="Completed" sequence="2" value="Completed"/>
+                <element label="On Hold" sequence="3" value="On Hold"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Work notes" max_length="40" name="work_notes" type="journal_input"/>
+        <index name="index">
+            <element name="related_task"/>
+        </index>
+        <index name="index2">
+            <element name="meeting"/>
+        </index>
+        <index name="index3">
+            <element name="assigned_to"/>
+        </index>
+    </element>
+</database>

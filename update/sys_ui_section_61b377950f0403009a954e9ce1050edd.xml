@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Meeting Notes" section_id="61b377950f0403009a954e9ce1050edd" sys_domain="global" table="x_9006_mtg_mgr_meeting" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>attendees</element>
+            <position>0</position>
+            <sys_created_by>spulmano</sys_created_by>
+            <sys_created_on>2017-07-18 17:25:04</sys_created_on>
+            <sys_id>3ee633d90f0403009a954e9ce1050e96</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Meeting Notes" display_value="Meeting Notes" name="x_9006_mtg_mgr_meeting" sys_domain="global" view="Default view">61b377950f0403009a954e9ce1050edd</sys_ui_section>
+            <sys_updated_by>spulmano</sys_updated_by>
+            <sys_updated_on>2017-07-18 17:25:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>meeting_notes</element>
+            <position>1</position>
+            <sys_created_by>spulmano</sys_created_by>
+            <sys_created_on>2017-07-18 17:25:04</sys_created_on>
+            <sys_id>bee633d90f0403009a954e9ce1050e96</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Meeting Notes" display_value="Meeting Notes" name="x_9006_mtg_mgr_meeting" sys_domain="global" view="Default view">61b377950f0403009a954e9ce1050edd</sys_ui_section>
+            <sys_updated_by>spulmano</sys_updated_by>
+            <sys_updated_on>2017-07-18 17:25:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Meeting Notes</caption>
+            <header>false</header>
+            <name>x_9006_mtg_mgr_meeting</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>spulmano</sys_created_by>
+            <sys_created_on>2017-07-18 17:11:03</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>61b377950f0403009a954e9ce1050edd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Meeting Notes</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Meeting Manager" source="x_9006_mtg_mgr">9d6acf510f8003009a954e9ce1050eea</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Meeting Manager">9d6acf510f8003009a954e9ce1050eea</sys_scope>
+            <sys_update_name>sys_ui_section_61b377950f0403009a954e9ce1050edd</sys_update_name>
+            <sys_updated_by>spulmano</sys_updated_by>
+            <sys_updated_on>2017-07-18 17:11:03</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
